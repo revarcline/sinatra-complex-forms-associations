@@ -15,3 +15,7 @@ gem 'sqlite3', '~>1.3.6'
 gem 'thin'
 gem 'tux'
 gem 'capybara'
+
+gem "ripl-multi_line", "~> 0.3.1"
+
+gem "ripl-irb", "~> 0.2.3"

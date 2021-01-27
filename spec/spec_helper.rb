@@ -1,4 +1,4 @@
-ENV["SINATRA_ENV"] = "test"
+ENV['SINATRA_ENV'] = 'test'
 
 require_relative '../config/environment'
 require 'rack/test'
@@ -12,10 +12,10 @@ end
 ActiveRecord::Base.logger = nil
 
 RSpec.configure do |config|
-
   config.include Rack::Test::Methods
   config.include Capybara::DSL
   DatabaseCleaner.strategy = :truncation
+  config.tty = true
 
   config.before do
     DatabaseCleaner.clean
